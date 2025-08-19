@@ -13,7 +13,7 @@ module.exports = (env) => {
 
     output: {
       path: path.resolve(__dirname, 'build'),
-      filename: 'Calc.[contenthash].js',
+      filename: 'Calc.js',
       clean: true,
     },
 

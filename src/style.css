@@ -204,4 +204,23 @@ button.zero {
   }
 }
 
+@media (width <= 767px) {
+  .theme-btn{
+    display: inline;
+    transform: translate(0, 40px);
+  }
 
+  .theme-menu{
+    display: flex;
+     transform: translate(40px, 150px);
+     width: 200px;
+  }
+
+  .theme-menu.open{
+    transform: translate(40px, -10px);
+  }
+
+  body.open{
+   width: 100%; 
+}
+}
