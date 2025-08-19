@@ -34,11 +34,11 @@
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.2"
   },
-"lint-staged": {
-  "*.{js,jsx,mjs,cjs}": [
-    "npx eslint --fix",
-    "npx prettier --write",
-    "git add"
-  ]
-}
+  "lint-staged": {
+    "*.{js,jsx,mjs,cjs}": [
+      "npx eslint --fix",
+      "npx prettier --write",
+      "git add"
+    ]
+  }
 }
