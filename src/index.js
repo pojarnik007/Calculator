@@ -16,7 +16,7 @@ buttonsEl.addEventListener('click', (e) => {
   if (btn.tagName !== 'BUTTON') return
 
   const value = btn.textContent
-
+  if('ErrorNaNInfinity'.includes(state.currentInput)) state.currentInput = '';
   if (!isNaN(value) || value === '.') {
     inputNumber(value)
   } else if ('/*-+'.includes(value)) {

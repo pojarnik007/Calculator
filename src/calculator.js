@@ -1,3 +1,4 @@
+import { displayEl } from './dom.js';
 import { add, subtract, multiply, divide, sqrt } from './operations.js'
 import { state } from './state.js'
 
@@ -10,7 +11,12 @@ const OPERATIONS = {
 
 export function inputNumber(num) {
   if (num == '0' & state.currentInput == '') return;
-  if (state.currentInput.length > 15) return;
+  if (state.currentInput.length > 15) {
+    displayEl.style.fontSize =1.6 - (state.currentInput.length-18)/25 + 'em';
+  } else {
+    displayEl.style.fontSize = '2em';
+  }
+  if (state.currentInput.length > 30) return;
   if (num == '.' & state.currentInput.includes('.')){
     return;
   } else if (num == '.' & state.currentInput=='') {
@@ -40,14 +46,18 @@ export function mySqrt() {
 }
 
 export function exponentiation(){
+  if (state.currentInput === '') return;
   state.currentInput = ( parseFloat(state.currentInput) * parseFloat(state.currentInput) ).toString();
 }
 
 export function oneDivX() {
+  if(parseFloat(state.currentInput) === 0) return;
+  if(state.currentInput === '') return;
    state.currentInput = ( 1/parseFloat(state.currentInput) ).toString();
 }
 
 export function percents() {
+  if (state.currentInput === '') return;
   if(state.previousInput) {
       state.currentInput =( parseFloat(state.currentInput) * parseFloat(state.previousInput)).toString();
   }

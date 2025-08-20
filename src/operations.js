@@ -17,8 +17,7 @@ export function sqrt(a) {
   let precision = 0.0000001
   let n = parseFloat(a);
   if (n < 0) {
-    HistoryDisplay.textContent = "NaN";
-    return 0;
+    return "Error";
   }
   if (n === 0) {
     return 0;
