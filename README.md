@@ -7,7 +7,8 @@
 <br>
 <h3>Сайт с калькулятором</h3>
 <hr>
-<a href="https://pojarnik.page.gd/?i=1">Ссылка на сайт.</a>
+<a href="https://calculator-wasmer-app-deployments.wasmer.app/">Актуальная ссылка на сайт.</a>
+<a href="https://pojarnik.page.gd/?i=1">Ссылка на другой сайт. (на момент обновления Readme по этой ссылке ещё не дошли последние обновления калькулятора)</a> 
 
 <h3>Инструкция по запуску</h3>
 <hr>
